@@ -29,16 +29,19 @@ body {
 }
 
 section {
-    width: 100% ;
-    max-width: 1700px ;
-    margin: 0 auto ;
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .header {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
     position: fixed;
-    width: 100% ;
-    max-width: 1700px ;
-    margin: 0 auto ;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--navcolor);
     box-shadow: 2px 5px 10px 2px #fff;
     z-index: 20000;
@@ -48,7 +51,6 @@ section {
 }
 
 .header .nav {
-    position: relative;
     margin-top: 11px;
     z-index: 10000;
 }
@@ -414,6 +416,7 @@ button:hover:before {
 
 .service-item {
     max-width: 33.33%;
+    margin: 0 auto;
     padding: 1.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -491,6 +494,7 @@ button:hover:before {
     padding: 20px;
     display: flex;
     flex: 0 0 33.33%;
+    max-width: 33.33%;
     flex-wrap: wrap;
 }
 
@@ -579,8 +583,8 @@ button:hover:before {
 
 
 footer {
-    width: 100% ;
-    max-width: 1700px ;
+    width: 100%;
+    max-width: 1700px;
     margin: 0 auto;
     background-color: var(--navcolor);
     display: flex;
@@ -815,7 +819,7 @@ footer {
     }
 
     .about-container .about-left .pic {
-        width: 90% ;
+        width: 90%;
     }
 }
 
@@ -910,7 +914,7 @@ footer {
     }
 
     .about-container .about-left .pic {
-        width: 70% ;
+        width: 70%;
     }
 
 }
@@ -954,12 +958,13 @@ footer {
         flex-direction: column;
     }
 
-    .service-item {
+    .service-item,
+    .contact-section .contact-item {
         max-width: 100%;
     }
 
-    .contact-section .contact-item {
-        max-width: 100%;
+    .contact-section {
+        padding: 7% 10%;
     }
 
     .contact-section .contact-form .forma {
@@ -973,6 +978,7 @@ footer {
     .submit-btn {
         text-align: center;
     }
+
 }
 
 @media all and (max-width: 750px) {
@@ -1012,6 +1018,11 @@ footer {
     .about-container .about-left .pic {
         width: 90%;
     }
+
+    .contact-section {
+        padding: 7% 2.5%;
+    }
+
 }
 
 @media all and (max-width: 550px) {
