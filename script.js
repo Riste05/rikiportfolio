@@ -3,8 +3,6 @@
 const header = document.querySelector('.header');
 const menuBurgerOpen = document.querySelector('.menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');
-const aboutSkills = document.querySelector('.about-skill');
-
 
 // otvaranje na menu so burger 
 menuBurgerOpen.addEventListener('click', () => {
@@ -65,7 +63,6 @@ const logoLoaderPath = document.querySelectorAll('#logo-loader path');
 
 function loader() {
     document.getElementById('logo-loader').classList.add('fade-out')
-
 }
 
 function fadeOut() {
@@ -76,11 +73,6 @@ window.onload = fadeOut;
 
 //////////////////////////////////////////////////////////
 
-// Download CV
-
-// function downCV() {
-//     return window.open('CV_PDF.pdf')
-// }
 
 
 
