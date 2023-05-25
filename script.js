@@ -51,32 +51,6 @@ headerObs.observe(home)
 
 //////////////////////////////////////////////
 
-// ANIMACIJA NA ELEMENTITE OD DESNO KON LEVO I OD LEVO KON DESNO
-function skillsClass(entries, observe) {
-
-    //moze i na ovoj nacin ist efekt se dobiva 
-    // entries.forEach(e => {
-    //     console.log(e.target)
-    //     e.target.classList.toggle('right-to-left' , e.isIntersecting);
-    // })
-
-    const [entry] = entries;
-
-    if (!entry.isIntersecting) aboutSkills.classList.remove('right-to-left');
-    else aboutSkills.classList.add('right-to-left');
-}
-
-const skillsOption = {
-    root: null,
-    threshold: 0.9
-}
-
-const skillsObserve = new IntersectionObserver(skillsClass, skillsOption);
-skillsObserve.observe(aboutSkills);
-
-
-//////////////////////////////////////////////
-
 
 // LOADER
 
