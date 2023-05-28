@@ -73,16 +73,23 @@ window.onload = fadeOut;
 
 //////////////////////////////////////////////////////////
 
+const leftSide = document.querySelector('.left-side');
+const rightSide = document.querySelector('.right-side');
+
+ScrollReveal({
+    distance: '150px',
+    duration: 2500,
+})
+
+ScrollReveal().reveal(leftSide, { origin: 'left', delay: 6400 });
+ScrollReveal().reveal(rightSide, { origin: 'right', delay: 6400 })
+
+ScrollReveal().reveal('.service-item-one', { origin: 'top' })
+ScrollReveal().reveal('.service-item-two', { origin: 'top', delay: 300 })
+ScrollReveal().reveal('.service-item-three', { origin: 'top', delay: 600 })
 
 
-
-
-
-
-
-
-
-
+//////////////////////////////////////////////////////////
 
 
 
