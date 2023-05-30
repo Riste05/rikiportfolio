@@ -81,8 +81,8 @@ ScrollReveal({
     duration: 2500,
 })
 
-ScrollReveal().reveal(leftSide, { origin: 'left', delay: 6400 });
-ScrollReveal().reveal(rightSide, { origin: 'right', delay: 6400 })
+ScrollReveal().reveal(leftSide, { origin: 'left', delay: 6400, mobile: false });
+ScrollReveal().reveal(rightSide, { origin: 'right', delay: 6400, mobile: false })
 
 ScrollReveal().reveal('.service-item-one', { origin: 'top' })
 ScrollReveal().reveal('.service-item-two', { origin: 'top', delay: 300 })
@@ -91,11 +91,29 @@ ScrollReveal().reveal('.service-item-three', { origin: 'top', delay: 600 })
 
 //////////////////////////////////////////////////////////
 
+const portfolioBtn = document.querySelectorAll('.portfolio-btn button');
+const card = document.querySelectorAll('.card');
 
+portfolioBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+        const dataName = e.target.dataset.name;
 
+        Array.from(card).forEach(card => {
+            const cardSource = card.getAttribute('data-source');
 
+            if (dataName === cardSource) {
+                card.style.display = 'block';
+            } else if (dataName === 'all') {
+                card.style.display = 'block';
+            }
+            else {
+                card.style.display = 'none';
+            }
+        })
+    })
+})
 
-
+//////////////////////////////////////////////
 
 
 

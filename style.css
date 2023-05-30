@@ -317,7 +317,8 @@ button:hover:before {
 
 .about-container .about-title,
 .services-section .about-title,
-.contact-section .about-title {
+.contact-section .about-title,
+.portfolio-section .about-title {
     margin-bottom: 4rem;
     text-align: center;
     font-size: 3.5rem;
@@ -481,6 +482,46 @@ button:hover:before {
     line-height: 2.5rem;
     color: grey;
     transition: all .3s ease;
+}
+
+/* KRAJ NA TRETIOT SECTION */
+/* //////////////////////////////////////////// */
+
+.portfolio-section {
+    padding: 7rem 0;
+    background-color: rgba(38, 64, 139, 0.2);
+}
+
+.portfolio-btn {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.my-project {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 40%;
+    border-radius: 20px;
+    box-shadow: 0 0 7px #12f7ff;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 500ms ease;
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 /* KRAJ NA TRETIOT SECTION */
@@ -978,6 +1019,12 @@ footer {
 
     .contact-section {
         padding: 7% 2.5%;
+    }
+
+    .my-project {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 500px;
     }
 
 }
